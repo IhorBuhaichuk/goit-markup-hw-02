@@ -1,3 +1,151 @@
+/* Common styles */
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
 body {
-    background-color: blueviolet;
+  font-family: Roboto, sans-serif;
+}
+/* Header section*/
+.header {
+  background-color: #ffffff;
+}
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1, 19;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.logo-accent {
+  color: #2196f3;
+}
+.white-logo {
+  color: #ffffff;
+}
+.header-list .header-contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+/* Колір кнопки!!!!!!!! */
+.header-phone {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.header-btn {
+  color: #757575;
+}
+/* Hero section */
+.hero {
+  background-color: #2f303a;
+}
+.hero-tittle {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* Розібратись з кнопкою */
+.btn-service {
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffffff;
+}
+/* Тут потрібно сховати заголовок */
+.about-list-tittle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+.about-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.about-tittle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+/* Team */
+.team {
+  background-color: #f5f4fa;
+}
+.employee {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+}
+.position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* Footer section*/
+.footer {
+  background-color: #2f303a;
+}
+
+/* Друга сторінка/портфоліо */
+
+/* Якась херня з кнопками */
+.btn-filter {
+  width: 145px;
+  height: 38px;
+  left: 712px;
+  top: 174px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.item-list {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.option {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
