@@ -1,151 +1,146 @@
-/* Common styles */
-li {
+/* Root */
+:root {
+  /* fonts */
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  /* text colors */
+  --main-txt-cl: #212121;
+  --acent-txt-cl: #2196f3;
+  /* bg colors */
+  --light-bg-cl: #f5f4fa;
+  --dark-bg-cl: #2f303a;
+  /* others */
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--main-txt-cl);
+}
+
+/* reset styles */
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+.list {
   list-style: none;
 }
-a {
-  text-decoration: none;
-}
-body {
-  font-family: Roboto, sans-serif;
-}
-/* Header section*/
-.header {
-  background-color: #ffffff;
-}
+/* Header section */
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1, 19;
+  line-height: calc(31 / 26);
   letter-spacing: 0.03em;
-  color: #000000;
 }
-
 .logo-accent {
-  color: #2196f3;
+  color: var(--acent-txt-cl);
 }
-.white-logo {
-  color: #ffffff;
-}
-.header-list .header-contacts {
+.header-link,
+.contact-item {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
 }
-/* Колір кнопки!!!!!!!! */
-.header-phone {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+.header-link:hover,
+.header-link:focus,
+.contact-item:hover,
+.contact-item:focus {
+  color: var(--acent-txt-cl);
 }
-.header-btn {
+.contact-item {
   color: #757575;
 }
+
+.header-link-current {
+  color: var(--acent-txt-cl);
+}
+
 /* Hero section */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--dark-bg-cl);
 }
 .hero-tittle {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
-  text-align: center;
+  line-height: calc(60 / 44);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
 }
-
-/* Розібратись з кнопкою */
 .btn-service {
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  background-color: var(--acent-txt-cl);
   color: #ffffff;
 }
-/* Тут потрібно сховати заголовок */
+.hidden-tittle {
+  opacity: 0;
+}
 .about-list-tittle {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
 }
 .about-description {
-  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: #757575;
 }
 .about-tittle {
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
-  text-align: center;
+  line-height: calc(42 / 36);
   letter-spacing: 0.03em;
-  color: #212121;
+  text-align: center;
 }
-/* Team */
+/* Team section */
 .team {
   background-color: #f5f4fa;
 }
 .employee {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: calc(19 / 16);
+  text-align: center;
   letter-spacing: 0.03em;
 }
 .position {
-  font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
-/* Footer section*/
-.footer {
-  background-color: #2f303a;
-}
-
-/* Друга сторінка/портфоліо */
-
-/* Якась херня з кнопками */
-.btn-filter {
-  width: 145px;
-  height: 38px;
-  left: 712px;
-  top: 174px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
+  line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
-}
-.item-list {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 36px;
-  letter-spacing: 0.06em;
-  color: #212121;
-}
-.option {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.03em;
   color: #757575;
+}
+/* Footer section */
+.footer {
+  background-color: var(--dark-bg-cl);
+}
+.white-logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer-addres {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer-contacts {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
