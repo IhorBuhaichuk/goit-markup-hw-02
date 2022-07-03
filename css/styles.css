@@ -75,6 +75,7 @@ body {
   color: #ffffff;
 }
 .btn-service {
+  font-family: var(--main-font);
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -82,10 +83,12 @@ body {
   background-color: var(--acent-txt-cl);
   color: #ffffff;
 }
+
 .btn-service:hover,
 .btn-service:focus {
   background-color: #188ce8;
 }
+
 .hidden-tittle {
   opacity: 0;
 }
@@ -139,10 +142,15 @@ body {
   color: #ffffff;
 }
 .footer-contacts {
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.footer-addres {
+  font-style: var(--main-font);
 }
 /* portfolio section */
 .filters {
@@ -154,6 +162,14 @@ body {
 .btn-filter-current,
 .btn-filter:hover {
   background-color: var(--acent-txt-cl);
+}
+.btn-filter {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
 }
 .item-list {
   font-size: 18px;
